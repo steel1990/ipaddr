@@ -5,7 +5,7 @@ var ip = require('./ip.js');
 if (process.argv.length > 2) {
     var addr = process.argv[2];
     if (/(?:\d+\.){3}\d+/.test(addr)) {
-        ip.getAddress(addr);
+        ip.getAddress(addr).then(console.log);
     } else {
         ip.traceRoute(addr.replace(/^(?:https?:)?\/\//, '').replace(/\/+$/, ''));
     }

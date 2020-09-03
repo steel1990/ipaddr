@@ -1,17 +1,17 @@
 {
   "name": "ipaddr",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "get computer's ipv4 address.",
   "preferGlobal": "true",
   "main": "./ip",
   "bin": {
-    "ip": "cli"
+    "ip": "cli.js"
   },
   "author": "steel1990",
   "engines": {
     "node": "*"
   },
   "dependencies": {
-    "bl": "^1.0.0"
+    "got": "^11.6.0"
   }
 }
